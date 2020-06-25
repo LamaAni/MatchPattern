@@ -27,6 +27,19 @@ assert Pattern("ab", is_full_match=False).replace("cd", "abcd") == "cdcd"
 assert Pattern.format("""{[msg]}""", custom_start_pattern="{[", custom_end_pattern="]}", msg="ok") == "ok"
 ```
 
+# Symbols
+
+### Globs
+1. `|` - Sperate glob patterns
+1. `*` - Match multiple chars (any)
+1. `?` - Match single char (any)
+
+### Regex
+A regex pattern will must start with `re::`, anything after that will not be modified, i.e.
+```python
+"re::^.my[:].*$" -> r"^.my[:].*$"
+```
+
 # Scan Path
 
 Allows for scanning folders and files to match a pattern. Will always do a recursive scan. Example:
