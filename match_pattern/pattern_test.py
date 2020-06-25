@@ -42,6 +42,10 @@ def test_multi_glob_with_pattern_object():
     assert not ptrn.test("cbkkd"), "Invalid negative match pattern 2"
 
 
+def test_pattern_replace_glob():
+    assert Pattern.replace("ab", "cd", "abcd") == "cdcd"
+
+
 def test_pattern_replace():
     assert Pattern("re::(lama)").replace("kka", "the lama of nothing") == "the kka of nothing"
 

@@ -19,15 +19,15 @@ def get_version():
 
 
 setup(
-    name="zthreading",
+    name="match_pattern",
     version=get_version(),
-    description="A collection of wrapper classes for event broadcast and task management for python (Python Threads or Asyncio).",
-    long_description="Please see the github repo and help @ https://github.com/LamaAni/zthreading.py",
+    description="An integrated glob and regex pattern matcher, with file and folder scan capabilities.",
+    long_description="Please see the github repo and help @ https://github.com/LamaAni/MatchPattern",
     classifiers=[],
     author="Zav Shotan",
     author_email="",
     url="https://github.com/LamaAni/zthreading.py",
-    packages=["zthreading"],
+    packages=["match_pattern"],
     platforms="any",
     license="LICENSE",
     install_requires=[],

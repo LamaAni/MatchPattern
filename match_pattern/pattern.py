@@ -190,7 +190,7 @@ class Pattern(object):
             str: The augmented string
         """
         if not isinstance(pattern, Pattern):
-            pattern = Pattern(pattern)
+            pattern = Pattern(pattern, is_full_match=False)
 
         return re.sub(pattern.matcher, replace_with, val)
 
