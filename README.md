@@ -35,7 +35,7 @@ assert Pattern.format("""{[msg]}""", custom_start_pattern="{[", custom_end_patte
 1. `?` - Match single char (any)
 
 ### Regex
-A regex pattern will must start with `re::`, anything after that will not be modified, i.e.
+A regex pattern must start with `re::`, anything after that will not be modified, i.e.
 ```python
 "re::^.my[:].*$" -> r"^.my[:].*$"
 ```
